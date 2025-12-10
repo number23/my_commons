@@ -1,0 +1,22 @@
+name: my_commons
+description: "Common utility classes and functions used in my Dart and Flutter projects."
+version: 0.0.1
+homepage: https://github.com/number23/my_commons
+
+environment:
+  sdk: ^3.10.1
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
