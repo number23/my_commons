@@ -1,6 +1,6 @@
 name: my_commons
 description: "Common utility classes and functions used in my Dart and Flutter projects."
-version: 0.0.3
+version: 0.0.4
 homepage: https://github.com/number23/my_commons
 
 environment:
