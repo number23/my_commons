@@ -8,6 +8,8 @@ void main() {
     final List<String> lst = ['2025-12-10', '2025-12-01', '2025-12-05'];
     expect(getMin(lst), '2025-12-01');
     expect(getMax(lst), '2025-12-10');
+    expect(getMin([]), '');
+    expect(getMin(['Dart']), 'Dart');
   });
 
   test('test getShortUuid', () {
