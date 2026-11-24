@@ -1,7 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:my_commons/my_commons.dart';
-import 'package:my_commons/src/comm.dart';
 
 void main() {
   test('test getMin && getMax func', () {

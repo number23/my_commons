@@ -141,15 +141,11 @@ void main() {
     const signed = DecimalTextInputFormatter(allowNegative: true);
 
     TextEditingValue typed(String text) => TextEditingValue(
-          text: text,
-          selection: TextSelection.collapsed(offset: text.length),
-        );
+      text: text,
+      selection: TextSelection.collapsed(offset: text.length),
+    );
 
-    String apply(
-      DecimalTextInputFormatter formatter,
-      String from,
-      String to,
-    ) =>
+    String apply(DecimalTextInputFormatter formatter, String from, String to) =>
         formatter.formatEditUpdate(typed(from), typed(to)).text;
 
     test('allows empty input', () {

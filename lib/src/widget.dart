@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 Widget buildCheckboxes({
   required Color activeColor,
@@ -52,6 +52,7 @@ Widget buildDropdownList({
   );
   return DropdownButtonFormField<int?>(
     initialValue: selected,
+    enabled: enabled,
     isExpanded: true,
     style: textStyle,
     decoration: InputDecoration(
@@ -74,6 +75,6 @@ Widget buildDropdownList({
         ),
       );
     }).toList(),
-    onChanged: enabled ? callbackFn : null,
+    onChanged: callbackFn,
   );
 }

@@ -57,7 +57,9 @@ class DecimalTextInputFormatter extends TextInputFormatter {
 
   @override
   TextEditingValue formatEditUpdate(
-      TextEditingValue oldValue, TextEditingValue newValue) {
+    TextEditingValue oldValue,
+    TextEditingValue newValue,
+  ) {
     if (newValue.text.isEmpty) return newValue;
     final pattern = allowNegative ? _signedPattern : _positivePattern;
     if (pattern.hasMatch(newValue.text)) return newValue;
